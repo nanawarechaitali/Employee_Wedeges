@@ -48,3 +48,23 @@ Daily_wage=$(( $Emp_Hr * $Wage_Per_Hour ))
 
 
 echo "Daily wage using switch case" $Daily_Wage
+
+
+
+
+
+#UC5
+totalsalary=0
+numofworkingDays=20
+for (( day=1; day<=$numofworkingDays; day++ ))
+do
+
+
+
+
+
+salary=$(( Emp_Hr * $Wage_Per_Hour ))
+totalsalary=$(( $totalsalary + $salary ))
+done
+
+echo "Total salary of month :" $totalsalary
